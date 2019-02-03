@@ -75,3 +75,8 @@
 // LENGHT PROPERTY
 var name = 'CodeSign Design';
 console.log(name.length);
+
+// CONVERT INT to STRING
+var age = 50;
+var ageStringify = age.toString();
+console.log(typeof ageStringify);
