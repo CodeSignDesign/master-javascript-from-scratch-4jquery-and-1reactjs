@@ -75,3 +75,20 @@
 // console.log(result);
 
 // ADDITIVE OPERATORS
+
+// HERE WE HAVE 2 NUMBERS
+// var result = 20 + 30; 
+// console.log(result);
+
+// HERE WE HAVE STRING
+// var name = "CodeSign";
+// var age = 50;
+// var sentence = 'My Name is ' + name + " and my age is " + age;
+// console.log(sentence);
+
+// IF ONE OPERAND IS A STRING IT WILL =>
+// CONVERT THE OTHER OPERAND ALSO TO A STRING !!!
+var num1 = 10;
+var num2 = '10';
+var total = num1 + num2;
+console.log(total);
