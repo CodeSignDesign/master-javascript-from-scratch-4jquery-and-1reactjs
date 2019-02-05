@@ -5,7 +5,7 @@
  * MULTIPLICATIVE OPERATORS - "*" , "/" and "%"
  * ADDITIVE OPERATORS -
  * RELATIONAL OPERATORS - ">" "<" "<=" ">="
- * EQUALITY OPERATORS
+ * EQUALITY OPERATORS - == != === !==
  * CONDITIONAL OPERATORS
  * ASSIGNMENT OPERATORS
  * COMMA OPERATORS
@@ -74,7 +74,7 @@
 // var result = 203 % 10;
 // console.log(result);
 
-// ADDITIVE OPERATORS
+// ADDITIVE OPERATORS 
 
 // HERE WE HAVE 2 NUMBERS
 // var result = 20 + 30; 
@@ -99,4 +99,32 @@
 // var total = num1 - num2; // Number();
 // console.log(total);
 
-// RELATIONAL OPERATORS - > < <= >=
+// RELATIONAL OPERATORS - > < <= >= 
+// WE USE THESE OPERATORS TO COMPARE 2 VALUES
+
+// var result = 10 < 20;
+// console.log(result);
+
+// var result = 10 > 20;
+// console.log(result);
+
+// var result = 10 <= 20;
+// console.log(result);
+
+// var result = 10 >= 20;
+// console.log(result);
+
+// COMPARISON OF 2 STRINGS, they use NUMERICAL VALUES OF STRING LETTERS AND COMPARE THERE'S VALUE
+// Source: https://ee.hawaii.edu/~tep/EE160/Book/chap4/subsection2.1.1.1.html
+
+// var result = "Brick" > "alphabet";
+// console.log(result);
+
+// IF ONE VALUE IS STRING AND ANOTHER IS NUMBER, 
+// COMPARISON WILL BE BASED ON NUMBER. 
+// BECAUSE COMPARISON IS BASED ON NUMBER
+// var result = "23" < 3; // false
+// BECAUSE THEY ARE STRING - COMPARISONS BASED ON CHARACTER CODE
+// var result = "23" < "3"; // true
+
+// EQUALITY OPERATORS -> == != === !==
