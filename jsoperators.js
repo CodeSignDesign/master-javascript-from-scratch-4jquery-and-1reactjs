@@ -2,9 +2,9 @@
 /**
  * UNARY OPERATORS try to convert everything to number and when we use + or - operator ther try to use mathematical conversion
  * BOOLEAN OPERATORS - logical ! (NOT), && (AND), || (OR)
- * MULTIPLICATIVE OPERATORS
- * ADDITIVE OPERATORS
- * RELATIONAL OPERATORS
+ * MULTIPLICATIVE OPERATORS - "*" , "/" and "%"
+ * ADDITIVE OPERATORS -
+ * RELATIONAL OPERATORS - ">" "<" "<=" ">="
  * EQUALITY OPERATORS
  * CONDITIONAL OPERATORS
  * ASSIGNMENT OPERATORS
@@ -59,7 +59,7 @@
 // var result = false || false; // only here return "false" !
 // console.log(result);
 
-// MULTIPLICATIVE OPERATORS *, / and % 
+// MULTIPLICATIVE OPERATORS "*" , "/" and "%" 
 // EVEN IF WE HAVE STRINGS IT WILL TRY TO CONVERT TO NUMBER
 // var result = 2 * '10';
 // var result = 2 * 10;
@@ -83,12 +83,20 @@
 // HERE WE HAVE STRING
 // var name = "CodeSign";
 // var age = 50;
-// var sentence = 'My Name is ' + name + " and my age is " + age;
+// var sentence = 'My Name is ' + name + " and my age is " + age; // toString(); "METHOD"
 // console.log(sentence);
 
 // IF ONE OPERAND IS A STRING IT WILL =>
-// CONVERT THE OTHER OPERAND ALSO TO A STRING !!!
-var num1 = 10;
-var num2 = '10';
-var total = num1 + num2;
-console.log(total);
+// with "+" it will CONVERT OTHER OPERAND ALSO TO A STRING
+// var num1 = 10;
+// var num2 = '10';
+// var total = num1 + num2;
+// console.log(total);
+
+// with "-" it will CONVER OTHER OPERAND TO A NUMBER
+// var num1 = 10;
+// var num2 = '1';
+// var total = num1 - num2; // Number();
+// console.log(total);
+
+// RELATIONAL OPERATORS - > < <= >=
