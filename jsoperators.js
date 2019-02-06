@@ -6,7 +6,7 @@
  * ADDITIVE OPERATORS -
  * RELATIONAL OPERATORS - ">" "<" "<=" ">="
  * EQUALITY OPERATORS - == != === !==
- * CONDITIONAL OPERATORS
+ * CONDITIONAL /TERNERY OPERATORS - variable = expression ? true:false
  * ASSIGNMENT OPERATORS
  * COMMA OPERATORS
  */ 
@@ -127,4 +127,16 @@
 // BECAUSE THEY ARE STRING - COMPARISONS BASED ON CHARACTER CODE
 // var result = "23" < "3"; // true
 
-// EQUALITY OPERATORS -> == != === !==
+// EQUALITY OPERATORS -> == === != !==
+// console.log('1' == 1); // true
+// console.log(1 != 1); // false
+// console.log(false == 0); // true
+// console.log(true == 1); // true
+
+// IDETICAL = STRICT EQUAL OPERATORS
+// console.log('1' === 1); // false
+// console.log(1 !== '1'); // true
+
+// CONDITIONAL /TERNERY OPERATORS - 
+// variable = expression ? true:false
+
