@@ -18,13 +18,24 @@
 // alert(anotherResult);
 // total(); // to envoke function we have to use parentheses
 
-function nameCheck(name) {
-    if (name == 'CodeSign') {
-        return 'Hi CodeSign';
-    } else {
-        return 'I dont know you' 
-    }
-    alert(Otinanai);
+// function nameCheck(name) {
+//     if (name == 'CodeSign') {
+//         return 'Hi CodeSign';
+//     } else {
+//         return 'I dont know you' 
+//     }
+//     alert(Otinanai);
+// }
+// var result = nameCheck('CodeSign');
+// alert(result);
+
+// ARGUMENTS
+/**
+ * ARGUMENTS are not necessary and can be any data type or none
+ * ARRAY like object represents arguments internally []
+ * you can access each argument using Bracket Notation
+ * determine number of arguments using Arraylength Propery
+ */
+function SayHi() {
+    
 }
-var result = nameCheck('CodeSign');
-alert(result);
