@@ -140,3 +140,25 @@
 // CONDITIONAL /TERNERY OPERATORS - 
 // variable = expression ? true:false
 
+// var num1 = 200;
+// var num2 = 100; // That is correct
+// var num2 = 1000; // That is wrong
+// var result = (num1 > num2) ? 'That is correct' : 'That is wrong';
+// console.log(result);
+
+// Compound ASSIGNMENT OPERATORS = += -= *= %=
+// var num = 10;
+// num = num + 10;
+// num += 10;
+// num -= 10;
+// num *= 10;
+// num /= 10;
+// num %= 10;
+// console.log(num);
+
+// COMMA OPERATORS
+// var name = 'Code';
+// var age = 50;
+// var address = 'Athens';
+var name = 'Code', age = 50, address = 'Athens';
+console.log('Name:', name, 'Age:', age, 'Address:', address);
