@@ -36,6 +36,7 @@
  * you can access each argument using Bracket Notation
  * determine number of arguments using Arraylength Propery
  */
-function SayHi() {
-    
+function sayHi() {
+
 }
+alert(sayHi("CodeSign"));
