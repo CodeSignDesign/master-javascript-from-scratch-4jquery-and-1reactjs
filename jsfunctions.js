@@ -36,7 +36,22 @@
  * you can access each argument using Bracket Notation
  * determine number of arguments using Arraylength Propery
  */
-function sayHi() {
+// function sayHi(name) {
+//     return name;
+// }
+// alert(sayHi("JavaScript CodeSign"));
 
+// function sayHi(name) {
+    // return arguments[0], arguments[2], arguments[1];
+//     return arguments[0] + arguments[2] + arguments[1];
+// }
+// alert(sayHi("JavaScript ", 'JS Functions are Great', 'Code '));
+
+function shopping() {
+    if (arguments.length >= 2) {
+        alert('You are granted 20% discount!');
+    } else if (arguments.length <= 1) {
+        alert('You are not getting any discount!')
+    }
 }
-alert(sayHi("CodeSign"));
+shopping("Milk", "Bread");
