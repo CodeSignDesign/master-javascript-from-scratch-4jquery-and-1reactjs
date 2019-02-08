@@ -7,6 +7,14 @@
  * access using bracket notation 
  * set value using bracket notation or length
  * detecting array - Array.isArray()
+ * conversion methods - toString(), join()
+ * stack methods - push(), pop()
+ * queue methods - shift(), unshift()
+ * reordering methods - reverse(), sort()
+ * manipulation methods - concat(), slice(), splice()
+ * location methods - indexOf(), lastIndexOf()
+ * iterative methods - every(), some(), filter(), forEach(), map()
+ * reduce method - reduce(), reduceRight()
  */
 
  // CREATE ARRAY
