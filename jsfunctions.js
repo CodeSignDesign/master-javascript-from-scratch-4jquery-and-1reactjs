@@ -103,3 +103,11 @@
  * all REFERENCE TYPES such as: Array, Date and RegExp ...
  * ... INHERIT THEIR BASIC BEHAVIOR FROM OBJECT TYPE
  */
+
+ // VERY IMPORTANT ### 1st WAY
+var person = new Object(); // ONE WAY TO CREATE OBJECT in JS
+
+// VERY IMPORTANT ### 2nd WAY
+var person = {
+    // SECOND WAY TO CREATE OBJECT IS TO CREATE OBJECT LI
+};
