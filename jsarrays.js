@@ -150,3 +150,35 @@
 // * insert/replace SAME AS ABOVE WITH 0 "ARGUMENTS" AND ITEMS TO IN
 
 // * ARRAY LOCATION METHODS: indexOf(), lastIndexOf()
+// Both indexOf() and lastIndexOf() accepts two arguments
+// The item to look for ...
+// ... and an optional index from which to start looking 
+// var colors = ["Red", "Green", "Blue", "Black", "Purple", "Gold"];
+// alert(colors.indexOf("Green"));
+// var colors = ["Red", "Green", "Blue", "Black", "Purple", "Gold"];
+// alert(colors.indexOf("Gold", 3));
+// alert(colors.lastIndexOf("Purple")); // IT SEARCH FROM THE LAST TO THE FIRST
+// START TO SEARCH FROM THE third (0,1,2,3 onwards) till the end
+// var colors = ["Red", "Green", "Blue", "Black", "Purple", "Gold"];
+// alert(colors.indexOf("rose")); // IT TRY TO FIND BUT IT IS NOT THERE, SO IT ALERT "-1" ? minus that one
+
+// ** ITERATIVE METHONS - every(), some(), filter(), forEach(), map()
+// EACH METHODS ACCEPTS TWO ARGUMENTS
+// - A FUNCTION TO RUN ON EACH ITEM
+// - AND OPTIONAL SCOPE OBJECT, IN WHICH TO RUN THE FUNCTION
+
+// * every() - iterative method
+// var numbers = [1,2,3,4,5,4,3,2,1];
+// var everyResult = numbers.every(function(item, index, array){
+    //     return item > 2;
+    // });
+    // console.log(everyResult); // NOT EVERY ITEM IS GREATER THEN 2, SO IT RETURNS "false"
+    
+// * some() - iterative method
+// var numbers = [1,2,3,4,5,4,3,2,1];
+// var someNumbers = numbers.some(function(item, index, array) {
+//     return item > 2; // SOME OF THE ITEMS ARE GREATER THEN "2";
+// });
+// console.log(someNumbers);
+
+// * filter() - iterative method
