@@ -113,3 +113,40 @@
 // }
 
 // * Manipulation methods - concat(), slice(), splice()
+// => concat(); 
+// var colors = ["purple", "green", "pink"]
+// var totalColors = colors.concat(['blue', 'violet']);
+// console.log(totalColors);
+// console.log("ORG: ", colors, totalColors); 
+// for me ORG: needs "ORG: " & THIS DON'T WORK 'ORG:'!=> "ORG: " 
+
+// => slice(); TAKES TWO ARGUMENTS
+// * IF GIVEN ONLY ONE ARGUMENT, IT RETURNS ALL ITEMS BETWEEN
+// "(including) THAT POSITION" AND "THE END" OF ARRAY
+// var colors = ["purple", "green", "pink", "blue", "violet"];
+// console.log(colors.slice());
+// console.log(colors.slice(1));
+// console.log(colors.slice(2));
+
+// * IF GIVEN TWO ARGUMENTS, IT RETURNS ALL ITEMS BETWEEN "START"
+// AND "THE END" POSITION, NOT INCLUDING "THE END" POSITION
+// var colors = ["purple", "green", "pink", "blue", "violet"];
+// console.log(colors.slice(1, 4));
+
+// => splice() - INSERT / REPLACE / DELETE
+// * DELETE USING TWO ARGUMENTS ..
+// POSITION OF FIRST ITEM AND THE NUMBER ITEMS TO DELETE
+// var colors = ["purple", "green", "pink", "blue", "violet"];
+// var deletedItems = colors.splice(3, 1);
+// var colors = ["purple", "green", "pink", "blue", "violet"];
+// var deletedItems = colors.splice(3, 2); // 2nd ARG SHOWS HOW MANY ITEMS TO DELETE
+// var colors = ["purple", "green", "pink", "blue", "violet"];
+// var deletedItems = colors.splice(1, 3);
+// var deletedItems = colors.splice(1, 0, "I am not Color", "many");
+// var colors = ["purple", "green", "pink", "blue", "violet"];
+// var deletedItems = colors.splice(1, 4, "I am not Color", "I am Human");
+// console.log("Colors: ", colors, "Deleted: ", deletedItems);
+
+// * insert/replace SAME AS ABOVE WITH 0 "ARGUMENTS" AND ITEMS TO IN
+
+// * ARRAY LOCATION METHODS: indexOf(), lastIndexOf()
