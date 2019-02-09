@@ -177,8 +177,40 @@
 // * some() - iterative method
 // var numbers = [1,2,3,4,5,4,3,2,1];
 // var someNumbers = numbers.some(function(item, index, array) {
-//     return item > 2; // SOME OF THE ITEMS ARE GREATER THEN "2";
-// });
-// console.log(someNumbers);
-
+    //     return item > 2; // SOME OF THE ITEMS ARE GREATER THEN "2";
+    // });
+    // console.log(someNumbers);
+    
 // * filter() - iterative method
+// var numbers = [1,2,3,4,5,4,3,2,1];
+// var filterResult = numbers.filter(function(item, index, array) {
+//     return item > 2;
+// });
+// console.log(filterResult);
+
+// * forEach() - DOES NOT NEED RETURN STATEMENTS
+// var numbers = [1,2,3,4,5,4,3,2,1];
+// numbers.forEach(function(item, index, array) {
+//     // console.log(item);
+//     console.log(item, index, array); // VERY POWERFUL
+// });
+
+// var numbers = [1,2,3,4,5,4,3,2,1];
+// var mapResult = numbers.map(function(item, index, array) {
+//     return "Num " + item;    
+// });
+// console.log(mapResult);
+
+// * * REDUCE METHOD - reduce() "STARTS FROM BEGINING", reduceRight() "STARTS FROM THE END => FROM THE RIGHT"
+// BOTH METHODS ITERATE OVER ALL ITEMS IN THE ARRAY
+// ... AND BUILD UP A VALUE THAT IS ULTIMATELY RETURNED
+// They take two arguments, first argument is a function call on each item
+// Second optional argument is an initial value upon which the reduction is
+// a function passed into accepts four arguments
+// previousValue, currentValue, itemIndex, arrayObjectß
+
+var numbers = [1,2,3,4,5];
+var sum = numbers.reduce(function(prevValue, currentValue, index,array){
+    return prevValue + currentValue;
+});
+console.log(sum);
