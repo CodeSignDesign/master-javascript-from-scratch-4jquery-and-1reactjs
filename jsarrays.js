@@ -17,7 +17,7 @@
  * reduce method - reduce(), reduceRight()
  */
 
- // create ARRAY !!!
+// * CREATE Array !!!
 //  var colors = new Array('red', 'green', 'yellow');
 //  console.log(colors);
 //  var colors = []; // HERE: array literal > PREFERRED WAY
@@ -38,12 +38,78 @@
 // alert(colors[2]); // access using bracket notation
 // console.log(colors);
 // console.log(Array.isArray(colors));
-// SET VALUE USING BRACKET NOTATION:
+// ~ SET VALUE USING BRACKET NOTATION:
 // alert(colors[2] = 'purple');
-// DETECTING ARRAYS USING Array.isArray()
+// ~ DETECTING ARRAYS USING Array.isArray()
 // console.log(Array.isArray(colors));
 // ANOTHER WAY THAT WE - CAN NOT - RELAY ON
 // console.log(colors instanceof Array);
 
-// NOW: conversion methods - toString(), join()
+// * ARRAY CONVERSION METHODS - toString(), join()
 // objects have: toString(), toLocalString() and valueOf()
+// toLocalString() differs because the output is based on local time so in which country you are the result very
+
+// var colors = ["red", "green", "blue"];
+// console.log(colors.toString());
+// console.log(colors.join(" "));
+// console.log(colors.join(" - "));
+
+// * ARRAY STACK METHODS push(), pop()
+// Stack Method is also known as "LAST IN FIRST OUT" 
+// push() accepts any number of args and add to the end of array
+// pop() removes the last item in the array
+// var colors = [];
+// var allColors = colors.push("purple", "pink", "indigo");
+// colors.push("purple", "pink", "indigo"); // WE CAN USE STRAIGHT push() method
+// colors.push("Yellow");
+// var removedItem = colors.pop();
+// console.log(colors, "Removed item: ", removedItem);
+
+// * ARRAY QUEUE METHODS: unshift(), shift()
+// Queue Method is also known as FIRST in FIRST out
+// unshift() ADDS any number of args to the FRONT of array
+// shift() method REMOVES the FIRST item in the array and returns
+// var colors = [];
+// colors.unshift("Red", "Green", "Blue");
+// colors.unshift("Purple", "Cyan");
+// var removedItem = colors.shift();
+// console.log(colors, "Removed: ", removedItem);
+
+// * ARRAY REORDERING METHOD reverse(), sort()
+// 1st: reverse();
+// var values = [1,2,3,4,5];
+// values.reverse();
+// console.log(values);
+// 2nd: sort();
+// var values = [3,1,2,5,4];
+// values.sort();
+// console.log(values); // DON'T USE IT BUT IT SHOWS SAME AS DOWN
+// console.log(values.sort()); // USE THIS CODE AS DEFAULT !!!
+// // REVERS METHOD BEHIND THE SCENE REVERS THE NUMBERS TO STRING
+// var values = [0,10,50,100,150];
+// console.log(values.sort());
+
+// var values = ["orange", "apple", "banana", "cherry"];
+// console.log(values.sort());
+
+// var values = [0,10,50,100,150];
+// console.log(values.sort(compare));
+// function compare(val1, val2) {
+//     // return val2 - val1; // FROM bigger to smaller
+//     return val1 - val2; // FROM smaller to bigger
+// }
+
+// * REORDERING METHOD USING ARRAYS: sort(STRING);
+// var values = ["orange", "apple", "banana", "cherry"];
+// console.log(values.sort(compare));
+// function compare(val1, val2) {
+//     if (val1 > val2) {
+//         return -1;
+//     } else if (val1 > val2) {
+//         return 1;
+//     } else {
+//         return 0;
+//     }
+// }
+
+// * Manipulation methods - concat(), slice(), splice()
