@@ -2,7 +2,7 @@
 // * * * * * * * * * * * * 
 
 /** 
- * SECTION 02
+ * SECTION 03
 * Creating Project - {} =>USING OBJECT LITERAL, + New
 * Accessing Properties - []
 * Accessign Object Properties with Variables
