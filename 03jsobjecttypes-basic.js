@@ -1,7 +1,8 @@
-// JavaScript Object Types
+// JavaScript Object Types - BASIC
 // * * * * * * * * * * * * 
 
 /** 
+ * SECTION 02
 * Creating Project - {} =>USING OBJECT LITERAL, + New
 * Accessing Properties - []
 * Accessign Object Properties with Variables

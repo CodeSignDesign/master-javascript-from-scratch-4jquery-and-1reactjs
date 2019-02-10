@@ -1,6 +1,7 @@
-// JavaScript Functions
+// JavaScript Functions BASIC
 // ===================
 /**
+ * SECTION 06
  * With functions you can encapsulate statements
  * that can be run everywhere
  * functions can be called with name and arguments with comma

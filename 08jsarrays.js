@@ -1,4 +1,5 @@
 /**
+ * SECTION 08
  * JavaScript ARRAYS
  * ==================
  * Arrays hold any type of data such as STRING, NUMBER & OBJECT

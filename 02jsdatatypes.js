@@ -2,6 +2,7 @@
 // * * * * * * * * * * * 
 
 /**
+ * # SECTION 02
  * Boolean
  * Null
  * Undefined

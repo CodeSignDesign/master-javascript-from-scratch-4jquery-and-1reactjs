@@ -1,5 +1,6 @@
 // JavaScript OPERATORS 
 /**
+ * SECTION 04
  * UNARY OPERATORS try to convert everything to number and when we use + or - operator ther try to use mathematical conversion
  * BOOLEAN OPERATORS - logical ! (NOT), && (AND), || (OR)
  * MULTIPLICATIVE OPERATORS - "*" , "/" and "%"

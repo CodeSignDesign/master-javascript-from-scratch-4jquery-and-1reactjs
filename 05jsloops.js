@@ -2,6 +2,7 @@
 // JavaScript Statements
 // ====================
 /**
+ * SECTION 05
  * if else
  * do while
  * while
