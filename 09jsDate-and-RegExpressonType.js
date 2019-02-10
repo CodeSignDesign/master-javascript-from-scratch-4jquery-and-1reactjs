@@ -60,7 +60,7 @@
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
  * Now here REMEMBER Important: !!!
  * 
- * IMPORTANT MEANINGS
+ * IMPORTANT MEANINGS: 
  * d - digit
  * b - begining OR ??? "^"
  * e - end OR ??? "$"
