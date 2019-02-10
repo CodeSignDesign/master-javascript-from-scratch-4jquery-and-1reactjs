@@ -47,8 +47,8 @@
 // console.log(re.test("123")); // true OK 
 // console.log(re.test("123hello world")); // false OK
 
-// var re = /^\d{3}/; // WITHOUT "$" THAT ENDS SEARCH
-// console.log(re.test("123hello world")); // true
+var re = /^\d{3}/; // WITHOUT "$" THAT ENDS SEARCH
+console.log(re.test("123hello world")); // true
 
 /**
  * ^ - keyboard Shift + 6: Represents beginning
