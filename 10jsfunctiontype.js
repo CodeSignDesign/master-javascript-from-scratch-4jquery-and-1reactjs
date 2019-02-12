@@ -47,14 +47,14 @@
 // console.log(total(3,7));
 
 // here is sample where we can pass functions as arguments that's how flexible functions are:
-function callingAFunction(myFunc, myArgs) {
-    return myFunc(myArgs);
-}
-function addHundred(num) {
-    return num + 100;
-}
-var result = callingAFunction(addHundred, 1000);
-console.log(result); // 1100
+// function callingAFunction(myFunc, myArgs) {
+//     return myFunc(myArgs);
+// }
+// function addHundred(num) {
+//     return num + 100;
+// }
+// var result = callingAFunction(addHundred, 1000);
+// console.log(result); // 1100
 
 // * * FUNCTION'S ARGUMENT OBJECT PROPERTIES callee(), caller()
 /**
@@ -63,27 +63,52 @@ console.log(result); // 1100
  * 
  */
 /**
- * 47 FUNCTION ARGUMENT OBJECT PROPERTIES
+ * 47 ~ ~ ~  FUNCTION ARGUMENT OBJECT PROPERTIES ~ ~ ~
  * What is inside functions?
- * Two special objects are inside - arguments, "this"
+ * Two special objects are inside - "arguments", "this"
  * aftuments object is array like object, containing all arguments
  * arguments property - callee - pointer to the function
  * ... that owns the argument
  * function object also has additional property 'caller' which contains 
  * ... a reference to the function or null
  * 
- * this is reference to the execution context that the function
+ * "this" is reference to the execution context that the function
  * is operating on
  * when a function is called in a global scope of a web page
  * ... this points to a window object
  */
 
- function factorial(num) {
-     if (num < 1) {
-         return 1;
-     } else {
-        //  return num * factorial(num  - 1);
-        return num * arguments.callee(num - 1);
-     }
- }
- console.log(factorial(5));
+//  function factorial(num) {
+//      if (num < 1) {
+//          return 1;
+//      } else {
+//         //  return num * factorial(num  - 1);
+//         return num * arguments.callee(num - 1);
+//      }
+//  }
+//  console.log(factorial(5));
+
+// function outside() {
+//     inside();
+// }
+// function inside() {
+//     console.log(inside.caller);
+//     // alert(arguments.calle.caller);
+// }
+// // displays source code of outer 
+// console.log(outside());
+
+
+// 48 FUNCTION'S "this" OBJECT - it calls window object in global scope
+window.color = 'red';
+var obj = {color: 'blue'};
+function sayColor() {
+    console.log(this.color);
+}
+sayColor(); // red => GLOBAL
+obj.sayColor = sayColor;
+obj.sayColor();
+
+/**
+ * 49 FUNCTION METHODS
+ */
