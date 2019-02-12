@@ -100,15 +100,47 @@
 
 
 // 48 FUNCTION'S "this" OBJECT - it calls window object in global scope
-window.color = 'red';
-var obj = {color: 'blue'};
-function sayColor() {
-    console.log(this.color);
-}
-sayColor(); // red => GLOBAL
-obj.sayColor = sayColor;
-obj.sayColor();
+// window.color = 'red';
+// var obj = {color: 'blue'};
+// function sayColor() {
+//     console.log(this.color);
+// }
+// sayColor(); // red => GLOBAL
+// obj.sayColor = sayColor;
+// obj.sayColor();
 
 /**
- * 49 FUNCTION METHODS
+ * 49 FUNCTION METHODS: apply(), call(), bind()
+ * The apply() method accepts two arguments.
+ * The value of this inside the function and an array of arguments
+ * The second argument may be an instance of Array
+ * but it can also be the arguments object
  */
+
+// * apply() - WE USE: arguments, arguments object
+// function sum(num1, num2) {
+//     return num1 + num2;
+// }
+// function callingSum(num1, num2) {
+//     // return sum.apply(this, arguments);
+//     return sum.apply(this, [num1, num2]); // using array arguments
+// }
+// console.log(callingSum(111, 111));
+
+// * call() - USE: exact arguments (NOT: arrays, arguments object
+// function sum(num1, num2) {
+//     return num1 + num2;
+// }
+// function callingSum(num1, num2) {
+//     return sum.call(this, num1, num2); // using 
+// }
+// console.log(callingSum(111, 111));
+
+// * bind() - 
+window.color = 'red'; // object global
+var obj = { color: 'blue' }; // object on context
+function sayColor() {
+    alert(this.color);
+}
+var objSayColor = sayColor.bind(obj); // HERE WE bind() to this (global) object
+objsayColor();
