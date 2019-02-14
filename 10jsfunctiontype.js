@@ -142,5 +142,7 @@ var obj = { color: 'blue' }; // object on context
 function sayColor() {
     alert(this.color);
 }
+// var objSayColor = sayColor; // this will CALL GLOBAL OBJECT!
 var objSayColor = sayColor.bind(obj); // HERE WE bind() to this (global) object
-objsayColor();
+objSayColor(); 
+// WAS WRITTEN WRONG objsayColor(); INSTEAD OF!: objSayColor();
