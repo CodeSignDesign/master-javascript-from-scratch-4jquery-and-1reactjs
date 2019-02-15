@@ -79,9 +79,42 @@
 // 52 STRING MANIPULATION METHODS using:
 // indexOf(), trim(), toUpperCase(), toLowerCase()
 /**
- * indexOf AND lastIndexOf RESULTS THE SAMEBUT BEHIND THE SCENE THE SEARCH BEGINS FROM EITHER START (indexOf) or BY END (lastIndexOf)
+ * indexOf AND lastIndexOf RESULTS THE SAME BUT BEHIND THE SCENE THE SEARCH BEGINS FROM EITHER START (indexOf) or BY END (lastIndexOf)
  */
-var strVal = "Hello World";
+// var strVal = "Hello World";
 // alert(strVal.indexOf('o')); // 4
-alert(strVal.lastIndexOf('o')); // 7 
-alert(strVal.indexOf('9')); // -1
+// alert(strVal.lastIndexOf('o')); // 7 
+// alert(strVal.indexOf('9')); // -1
+
+// var strVal = "    Hello World    ";
+// console.log(strVal); // shows space
+// console.log(strVal.trim()); // TRIMS WHITE SPACE
+
+// var strVal = "Hello World";
+// console.log(strVal.toUpperCase()); // CONVERTS TO UPPERCASE
+// console.log(strVal.toLowerCase()); // CONVERTS TO LOWERCASE
+
+/**
+ * 53 STRING MANIPULATION METHODS using:
+ * STRING PATTERN MATCHING
+ * match(), search(), replace() AND split()
+ * 
+ * match is as same as calling RegExp object exec() method
+ * match() accepts RegExp string or RegExp object.
+ * 
+ * 
+ */
+
+//  var text = 'cat, bat, sat , fat';
+ //  var pattern = /.at/; // this dot means it accepts all character except new line => IT IS USEFUL WHEN WE SEARCH CERTAIN TEXT AND . (DOT) MEANS 
+ 
+ // var matches = text.match(pattern);
+ // alert(matches.index); // 0
+ // alert(matches[0]); // cat
+ 
+var text = 'cat, bat, sat , fat';
+var pattern = /at/;
+
+var matches = text.search(pattern);
+alert(matches);
+console.log(matches); // 1 - RETURNS 1 WHICH IS THE FIRST POSITION OF "at" IN THE STRING
