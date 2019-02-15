@@ -43,4 +43,29 @@
  * 51 STRING MANIPULATION METHODS
  * concat(); - slice(); - substr(); - substring();
  */
-var strVal = "JavaScript";
+
+ // * * concat();
+// var strVal = "Java";
+// var result = strVal.concat("Script ", '!');
+// console.log(result);
+
+// * * - slice(); - substr(); - substring();
+// ^ ^ ^ ^ ^ REDO THIS IS VERY IMPORTANT ^ ^ ^ ^ ^
+// * slice();
+// ^ slice(); METHOD SELECTS THE ELEMENTS STARTING AT THE GIVEN START ARGUMENT, AND ENDS AT, BUT DOES NOT INCLUDE, THE GIVEN END ARGUMENT ^ ^ ^ 
+// var strVal = 'hello world';
+// alert(strVal.slice(3)); // lo world
+// alert(strVal.slice(3, 7)); // lo w
+
+// * substring();
+// ^ substring(); EXTRACTS THE CHARACTERS IN A STRING BETWEEN "start" and "end", NOT INCLUDING "end" ITSELF
+// var strVal = 'hello world';
+// alert(strVal.substring(3)); // lo world
+// alert(strVal.substring(3, 7)); // lo world
+
+// substr(); 
+// ^ substr(); EXTRACTS PART OF STRING, BEGINNING AT CHARACTER AT SPECIFIED POSITION, AND RETURNS THE SPECIFIC NUMBER OF CHARACTERS.
+// it gives the number of characters to return !!!
+var strVal = 'hello world';
+alert(strVal.substr(3)); // lo world
+alert(strVal.substr(3, 7)); // lo worl
