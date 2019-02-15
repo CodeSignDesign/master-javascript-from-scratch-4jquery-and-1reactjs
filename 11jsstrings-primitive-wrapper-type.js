@@ -78,3 +78,10 @@
 
 // 52 STRING MANIPULATION METHODS using:
 // indexOf(), trim(), toUpperCase(), toLowerCase()
+/**
+ * indexOf AND lastIndexOf RESULTS THE SAMEBUT BEHIND THE SCENE THE SEARCH BEGINS FROM EITHER START (indexOf) or BY END (lastIndexOf)
+ */
+var strVal = "Hello World";
+// alert(strVal.indexOf('o')); // 4
+alert(strVal.lastIndexOf('o')); // 7 
+alert(strVal.indexOf('9')); // -1
