@@ -102,9 +102,16 @@
  * match is as same as calling RegExp object exec() method
  * match() accepts RegExp string or RegExp object.
  * 
+ * search() method takes one argument as same as match.
+ * it returns the index of first pattern occurance in the string
+ * .....or -1 if its not.
  * 
+ * replace() takes two arguments, first argument RegExp object or a string
+ * The second argument can be a string or a function.
+ * 
+ * split() method separate the string into an array of substrings
+ * .....based on a separator.
  */
-
 //  var text = 'cat, bat, sat , fat';
  //  var pattern = /.at/; // this dot means it accepts all character except new line => IT IS USEFUL WHEN WE SEARCH CERTAIN TEXT AND . (DOT) MEANS 
  
@@ -112,9 +119,20 @@
  // alert(matches.index); // 0
  // alert(matches[0]); // cat
  
-var text = 'cat, bat, sat , fat';
-var pattern = /at/;
+//  var text = 'cat, bat, sat , fat';
+//  var pattern = /at/;
+ 
+// var matches = text.search(pattern);
+// alert(matches);
+// console.log(matches); // 1 - RETURNS 1 WHICH IS THE FIRST POSITION OF "at" IN THE STRING
+ 
+// var text = 'cat, bat, sat , fat';
+// var pattern = /at/;
+// var result = text.replace('at', 'ond'); // THIS ONE REPLACE THE FIRST INSTANCE AND THE REST REMAINS THE SAME
+// console.log(result); // cond, bat, sat , fat
 
-var matches = text.search(pattern);
-alert(matches);
-console.log(matches); // 1 - RETURNS 1 WHICH IS THE FIRST POSITION OF "at" IN THE STRING
+var text = 'cat, bat, sat , fat';
+// var result = text.replace(/(.at)/g, 'ond'); // OK
+var result = text.replace(/(.at)/g, 'word($1)';
+// console.log(result); // cond, 
+alert(result); // cond, 
