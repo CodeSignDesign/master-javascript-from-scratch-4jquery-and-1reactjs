@@ -94,31 +94,27 @@
 // console.log(strVal.toUpperCase()); // CONVERTS TO UPPERCASE
 // console.log(strVal.toLowerCase()); // CONVERTS TO LOWERCASE
 
-/**
- * 53 STRING MANIPULATION METHODS using:
+/** 53 STRING MANIPULATION METHODS using:
  * STRING PATTERN MATCHING
  * match(), search(), replace() AND split()
- * 
+ */
+/** match() METHOD => 
  * match is as same as calling RegExp object exec() method
  * match() accepts RegExp string or RegExp object.
- * 
+ */
+
+// var text = 'cat, bat, sat , fat';
+// var pattern = /.at/; // this dot means it accepts all character except new line => IT IS USEFUL WHEN WE SEARCH CERTAIN TEXT AND . (DOT) MEANS 
+ 
+// var matches = text.match(pattern);
+// alert(matches.index); // 0
+// alert(matches[0]); // cat
+ 
+/** search() METHOD =>
  * search() method takes one argument as same as match.
  * it returns the index of first pattern occurance in the string
  * .....or -1 if its not.
- * 
- * replace() takes two arguments, first argument RegExp object or a string
- * The second argument can be a string or a function.
- * 
- * split() method separate the string into an array of substrings
- * .....based on a separator.
  */
-//  var text = 'cat, bat, sat , fat';
- //  var pattern = /.at/; // this dot means it accepts all character except new line => IT IS USEFUL WHEN WE SEARCH CERTAIN TEXT AND . (DOT) MEANS 
- 
- // var matches = text.match(pattern);
- // alert(matches.index); // 0
- // alert(matches[0]); // cat
- 
 //  var text = 'cat, bat, sat , fat';
 //  var pattern = /at/;
  
@@ -126,13 +122,27 @@
 // alert(matches);
 // console.log(matches); // 1 - RETURNS 1 WHICH IS THE FIRST POSITION OF "at" IN THE STRING
  
+/** replace() METHOD =>
+ * replace() takes two arguments, first argument RegExp object or a string
+ * The second argument can be a string or a function.
+ */
+
 // var text = 'cat, bat, sat , fat';
 // var pattern = /at/;
 // var result = text.replace('at', 'ond'); // THIS ONE REPLACE THE FIRST INSTANCE AND THE REST REMAINS THE SAME
 // console.log(result); // cond, bat, sat , fat
 
-var text = 'cat, bat, sat , fat';
-// var result = text.replace(/(.at)/g, 'ond'); // OK
-var result = text.replace(/(.at)/g, 'word($1)';
-// console.log(result); // cond, 
-alert(result); // cond, 
+// var text = 'cat, bat, sat , fat';
+// var result = text.replace(/(at)/g, 'ond'); // OK: cond, bond, sond , fond
+// var result = text.replace(/(.at)/g, "word($1)"); 
+// OK: word(cat), word(bat), word(sat), word(fat)
+// console.log(result); //  
+// alert(result); // 
+
+/** split(); MEHTOD =>
+* split() method separate the string into an array of substrings
+ * .....based on a separator.
+ */
+var colorText = 'red, blue, green, yellow';
+var colors1 = colorText.split(',');
+console.log(colors1); // (4) ["red", " blue", " green", " yellow"]
