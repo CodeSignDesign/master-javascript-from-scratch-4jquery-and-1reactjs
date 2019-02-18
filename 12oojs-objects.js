@@ -134,3 +134,4 @@ var person1 = new Person('DrCode', '50', 'Web Developer');
 person1.friends.push('Zen')
 var person2 = new Person('CodeSign', '30', 'Web Doctor');
 console.log(person1, person2);
+
