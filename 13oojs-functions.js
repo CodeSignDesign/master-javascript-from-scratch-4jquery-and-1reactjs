@@ -1,5 +1,5 @@
 /** SECTION 13 Object Oriented JavaScript - Functons
- * 59 FUNCTIONS **
+ * 59 FUNCTIONS
  * Function declaration
  * one of the key characteristics of function declaration is 
  * function declaration hoisting.
