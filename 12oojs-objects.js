@@ -94,25 +94,43 @@ function Person() {
 // };
 
 // THIS WAY IS BETTER ! ! ! @ @ @
+// Person.prototype = {
+//     constructor: Person,
+//     name: "CodeSign",
+//     age: 50,
+//     sayName: function(){
+//         alert(this.name);
+//     }
+// }
+
+// var person1 = new Person();
+// person1.sayName();
+// var person2 = new Person();
+// person1.sayName();
+// alert(Person.prototype.isPrototypeOf(person1));
+// alert(Person.prototype.isPrototypeOf(person2));
+// OBJECT KEYS
+// var keys = Object.keys(Person.prototype);
+// console.log(keys);
+
+/** 58 COMBINATION OF CONSTRUCTOR AND PROTOTYPE PATTERN
+ *  with this approach, each instance ends up with its own copy
+ * of the instance properties
+ * but they all share references to methods...
+ */
+function Person(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.friends = ['DrCode', 'CodeSign'];
+}
 Person.prototype = {
     constructor: Person,
-    name: "CodeSign",
-    age: 50,
     sayName: function(){
         alert(this.name);
     }
-}
-
-var person1 = new Person();
-person1.sayName();
-var person2 = new Person();
-person1.sayName();
-alert(Person.prototype.isPrototypeOf(person1));
-alert(Person.prototype.isPrototypeOf(person2));
-// OBJECT KEYS
-var keys = Object.keys(Person.prototype);
-console.log(keys);
-
-/** 58 COMBINATION OF CONSTRUCTOR AND PROTOTYPE PATTERN
- * 
- */
+};
+var person1 = new Person('DrCode', '50', 'Web Developer');
+person1.friends.push('Zen')
+var person2 = new Person('CodeSign', '30', 'Web Doctor');
+console.log(person1, person2);
