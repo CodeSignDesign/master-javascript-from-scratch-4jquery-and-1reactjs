@@ -1,4 +1,5 @@
 /** SECTION 13 Object Oriented JavaScript - Functons
+ * 
  * 59 FUNCTIONS
  * Function declaration
  * one of the key characteristics of function declaration is 
@@ -67,7 +68,17 @@
 // console.log(object.getName()());
 
 /** 63. CREATING BLOCK SCOPE USING IIFE (Immediately Invoked Function Expression) */
-function sayColor(){
+(function sayColor(){
     var color = 'red';
     alert(color);
-}
+})();
+// THIS WAY IT DOES NOT BECOME A PART OF GLOBAL OBJECT !
+// (function(){
+//     function sayColor(){
+//         var color = 'red';
+//         alert(color);
+//     }
+// })();
+(function(){
+    
+})();
