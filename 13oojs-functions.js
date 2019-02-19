@@ -22,12 +22,28 @@
  * RECURSIVE FUNCTION TYPICALLY IS FORMED WHEN A FUNCTION 
  * CALLS ITSELF BY NAME
 */
-function factorial(num) {
-    if (num <= 1) {
-        return 1;
-    } else {
-        // IT IS A POINTER TO A FUNCTION BEING EXECUTED
-        return num * factorial(num - 1);
+// function factorial(num) {
+//     if (num <= 1) {
+//         return 1;
+//     } else {
+//         // IT IS A POINTER TO A FUNCTION BEING EXECUTED
+//         return num * factorial(num - 1);
+//     }
+// }
+// alert(factorial(5)); // 5 * 4 * 3 * 2 * 1 = 120
+
+/** 61. FUNCTION CLOSURES
+* CLOSURES ARE FUNCTIONS THAT HAVE ACCESS TO VARIABLES FROM 
+* ...ANOTHER FUNCTION'S SCOPE. THIS IS OFTEN ACCOMPLISHED BY 
+* ...CREATING A FUNCTION INSIDE A FUNCTION
+*/
+function eat(){
+    var fruit = 'Apple';
+    // this function is executed outside of its execution context
+    function watch(){
+        console.log(fruit);
     }
-}
-alert(factorial(5)); // 5 * 4 * 3 * 2 * 1 = 120
+    return watch;
+} 
+var favFruit = eat();
+favFruit();
