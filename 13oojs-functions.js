@@ -37,13 +37,31 @@
 * ...ANOTHER FUNCTION'S SCOPE. THIS IS OFTEN ACCOMPLISHED BY 
 * ...CREATING A FUNCTION INSIDE A FUNCTION
 */
-function eat(){
-    var fruit = 'Apple';
-    // this function is executed outside of its execution context
-    function watch(){
-        console.log(fruit);
+// function eat(){
+//     var fruit = 'Apple';
+//     // this function is executed outside of its execution context
+//     function watch(){
+//         console.log(fruit);
+//     }
+//     return watch;
+// } 
+// var favFruit = eat();
+// favFruit();
+
+/** 62. OBJECT CLOSURES 
+ * 'this' OBJECT IS BASED ON THE CONTEXT IN WHICH A FUNCTION IS EXECUTED
+ * ANONYMUS FUNCTIONS ARE NOT BOUND TO AN OBJECT IN 'this' CONTEXT
+ */
+var name = "The window";
+var object = {
+    name: "The object",
+    getName: function() {
+        var that = this; // NEW ADDED !
+        return function() {
+            // return this.name; // USED IN 1st CASE
+            return that.name;
+        };
     }
-    return watch;
-} 
-var favFruit = eat();
-favFruit();
+};
+alert(object.getName()());
+console.log(object.getName()());
