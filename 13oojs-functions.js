@@ -52,16 +52,22 @@
  * 'this' OBJECT IS BASED ON THE CONTEXT IN WHICH A FUNCTION IS EXECUTED
  * ANONYMUS FUNCTIONS ARE NOT BOUND TO AN OBJECT IN 'this' CONTEXT
  */
-var name = "The window";
-var object = {
-    name: "The object",
-    getName: function() {
-        var that = this; // NEW ADDED !
-        return function() {
-            // return this.name; // USED IN 1st CASE
-            return that.name;
-        };
-    }
-};
-alert(object.getName()());
-console.log(object.getName()());
+// var name = "The window";
+// var object = {
+//     name: "The object",
+//     getName: function() {
+//         var that = this; // NEW ADDED !
+//         return function() {
+//             // return this.name; // USED IN 1st CASE
+//             return that.name;
+//         };
+//     }
+// };
+// alert(object.getName()());
+// console.log(object.getName()());
+
+/** 63. CREATING BLOCK SCOPE USING IIFE (Immediately Invoked Function Expression) */
+function sayColor(){
+    var color = 'red';
+    alert(color);
+}
