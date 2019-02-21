@@ -12,7 +12,15 @@
 // });
 
 // 69 TARGETTING ALL ELEMENTS USING JWQUERY
+// - ADDED ANIMATE.CSS minified FROM: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css
+// - NOT ADDED ANIMATE.CSS, this is just a reference: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css
+
+// $(document).ready(function(){
+//     // TARGET ALL THE "ELEMENTS" IN THE "DOM" WITH THE NAME OF "BUTTON"
+//     $('button').addClass('');
+// });
+
 $(document).ready(function(){
-    // TARGET ALL THE "ELEMENTS" IN THE "DOM" WITH THE NAME OF "BUTTON"
-    $('button').addClass('');
+    $('button').addClass('animated bounce');
 });
+
