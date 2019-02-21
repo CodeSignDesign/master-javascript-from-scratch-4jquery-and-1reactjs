@@ -19,8 +19,9 @@
 //     // TARGET ALL THE "ELEMENTS" IN THE "DOM" WITH THE NAME OF "BUTTON"
 //     $('button').addClass('');
 // });
-
+                    // HERE OUTCOME ON PAGE PROBLEM: NOT SAME RESULT
 $(document).ready(function(){
     $('button').addClass('animated bounce');
 });
 
+// 70 TARGETTING class AND id's IN jQuery
