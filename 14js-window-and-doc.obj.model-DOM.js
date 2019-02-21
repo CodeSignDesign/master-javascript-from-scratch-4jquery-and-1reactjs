@@ -59,9 +59,22 @@
 
 // CREATE BUTTON: 
 // EVERY TIME I CLICK THE BUTTON IT ADD NEW LINE OF h1 text
-function myClick(){
-    var div = document.createElement('h1');
-    var text = 'Hello CodeDeSigner';
-    var newH1 = document.body.appendChild(div);
-    newH1.innerText = text;
-}
+// function myClick(){
+//     var div = document.createElement('h1');
+//     var text = 'Hello CodeDeSigner';
+//     var newH1 = document.body.appendChild(div);
+//     newH1.innerText = text;
+// }
+
+/** 67 DOM - USING SELECTORS
+ * Finding the HTML ELEMENTS IN THE DOCUMENT OBJECT
+ */
+document.getElementById('root'); // get by id
+document.getElementsByClassName('container'); // class name
+document.getElementsByTagName('p'); // tag such as: p, h1, a
+document.querySelector('p.intro'); 
+document.querySelectorAll('p.intro'); 
+// using CSS SELECTORS:
+// HERE SELECTED: "p" PARAGRAPH element with CLASS of "intro"
+document.getElementById('root').innerHTML = 'sample';
+document.getElementById('root').innerText = 'sample';
