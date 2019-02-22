@@ -34,25 +34,27 @@
      * zoomIn, slideInUp
      */
 
-$(document).ready(function(){
+// $(document).ready(function(){
     // $('button').addClass('animated bounce');
     // $('.btn-success').addClass('shake');
     // $('#target6').addClass('slideInRight');
     // $('#target4').addClass('fadeInUp');
-    $('button').removeClass('btn-success');
+    // $('button').removeClass('btn-success');
+
 // * * * 71 CUSTOM CSS, TARGETTING PROPERTIES AND ADDING HTML IN jQUERY * * * 
 // TARGETING THE ELEMENTS PROPERTIES:
 // css, html, text, prop, addClass, removeClass, add html
     // $('#target1').css('text-decoration', 'line-through');
-    $('#target1').css('color', 'red');
+    // $('#target1').css('color', 'red');
     // FOR MULTIPLE OBJECTS USE: ! CURLY BRACES: ({name: 'value', nm: 'val'});
-    $('#target3').css({color: 'white', background: 'purple'});
+    // $('#target3').css({color: 'white', background: 'purple'});
     // how do we CONTROL THE PROPERTIES
-    $('#target2').prop('disabled', true);
+    // $('#target2').prop('disabled', true);
     // TARGET PAGE ELEMENTS
     // $('h1').html('Learning jQuery is so much FUN !');
-    $('h1').html('Learning <strong>jQuery</strong> is so much FUN !');
-    $('h1').text('Learning jQuery is FUN !');
+    // $('h1').html('Learning <strong>jQuery</strong> is so much FUN !');
+    // $('h1').text('Learning jQuery is FUN !');
+
 // * * * 72 REMOVE, APPEND AND CLONE in JQUERY  * * * 
 // REMOVE ELEMENT:
 // $('#target1').remove();
@@ -81,7 +83,57 @@ $(document).ready(function(){
 
     // * * * 75 HANDLING EVENTS WITH JQUERY * * * 
 // USING click EVENTS
-    
+// 1st EXAMPLE: 'click'
+// 1. TAKE THE ELEMENT, TARGET THE ELEMENT, USE THE .on METHOD, TAKES TWO ARGUMENTS, 1st IS THE EVENT ARGUMENT WHICH IS: 'click', AND THEN FUNCTION WHICH RETURNS WHATEVER WE WANT TO, in this case we put HTML
+    // $('.question').on('click', function(){
+    //     $('.answer').html('jQuery is the best thing is the World ! ');
+    // });
+// 2nd EXAMPLE: 'mouseover'
+// $('.question').on('mouseover', function(){
+//     $('.answer').html('jQuery is the best thing is the World ! ');
+// });
 
+// CLOSING: $(document).ready(function(){ => IMPORTANT ! ! !
+// });
 
+    // * * * 76 AJAX REQUEST TO EXTERNAL API * * * 
+// JSON = JavaScript OBJECT NOTATION, typical JSON NOTATION GOES LIKE THIS:
+// the DIFFERENCE: YOU HAVE TO WRAP IT IN "QUOTE" => BOTH: "NAME" & "VALUE"
+// {
+//     "name": "value",
+//     "anothername": "anothervalue"
+// }
+// we are going to make API CALL => 3rd party APIs:
+// for example: "Weather API", "Movie API"
+// WHAT WE DO: MAKE API "CALL" "REQUEST" to GET THAT DATA
+// IMPORTANT => 'JSON' EXPLANATION for JQUERY PAGE: 
+// http://youmightnotneedjquery.com/
+
+// $(document).ready(function(){
+//     $.getJSON('/my/url', function(data){
+//     })
+// });
+
+// EXPLANATION IN VANILLA JS:
+// var request = new XMLHttpRequest();
+// request.open('GET', '/my/url', true);
+// request.onload = function() {
+//   if (request.status >= 200 && request.status < 400) {
+//     // Success!
+//     var data = JSON.parse(request.responseText);
+//   } else {
+//     // We reached our target server, but it returned an error
+//   }
+// };
+// request.onerror = function() {
+//   // There was a connection error of some sort
+// };
+// request.send();
+
+// LIVE EXAMPLE: Algolia Search API-HN
+var url = '';
+$(document).ready(function(){
+    $.getJSON('url', function(data){
+        console.log(data);
+    })
 });
