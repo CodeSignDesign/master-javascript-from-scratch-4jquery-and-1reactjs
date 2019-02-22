@@ -76,6 +76,10 @@
 // TARGETING even numbers: VERY USEFUL WHEN WORKING WITH TABLES
     // $('.target:even').addClass('animated swing');
 
+    // AND PUT ALL QUERIES HAVING SEARCH "javascript"
+    //('animated swing');
+
+    //  * * * 74 JQUERY OF VANILLA JAVASCRIPT * * 
     // * * * 74 JQUERY OF VANILLA JAVASCRIPT * * * 
 // IF YOU DON'T WANT TO WRITE JQUERY THERE IS SITE: ...
 // ...YOU MIGHT NOT NEED jQuery...
@@ -130,10 +134,17 @@
 // };
 // request.send();
 
-// LIVE EXAMPLE: Algolia Search API-HN
-var url = '';
+// LIVE EXAMPLE: Algolia Search API-HN 
+// https://hn.algolia.com/api
+// TAKE FROM PAGE THIS SEARCH API URL: 
+// http://hn.algolia.com/api/v1/search?query=
+// AND FETCH ALL QUERIES EQUALS TO "javascript"
+// http://hn.algolia.com/api/v1/search?query=javascript
+var url = 'http://hn.algolia.com/api/v1/search?query=javascript';
 $(document).ready(function(){
     $.getJSON('url', function(data){
         console.log(data);
     })
 });
+
+// SOURCE FOR HTML PAGE: <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
