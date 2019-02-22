@@ -81,5 +81,7 @@ $(document).ready(function(){
 
     // * * * 75 HANDLING EVENTS WITH JQUERY * * * 
 // USING click EVENTS
+    
+
 
 });
