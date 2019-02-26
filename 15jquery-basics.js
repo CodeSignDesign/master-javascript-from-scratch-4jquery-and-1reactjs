@@ -100,7 +100,7 @@
 // CLOSING: $(document).ready(function(){ => IMPORTANT ! ! !
 // });
 
-    // * * * 76 AJAX REQUEST TO EXTERNAL API * * * 
+    // * * * 76 AJAX REQUEST TO EXTERNAL API * * * PROBLEM # # # 
 // JSON = JavaScript OBJECT NOTATION, typical JSON NOTATION GOES LIKE THIS:
 // the DIFFERENCE: YOU HAVE TO WRAP IT IN "QUOTE" => BOTH: "NAME" & "VALUE"
 // {
@@ -134,17 +134,78 @@
 // };
 // request.send();
 
-// LIVE EXAMPLE: Algolia Search API-HN 
-// https://hn.algolia.com/api
-// TAKE FROM PAGE THIS SEARCH API URL: 
-// http://hn.algolia.com/api/v1/search?query=
-// AND FETCH ALL QUERIES EQUALS TO "javascript"
-// http://hn.algolia.com/api/v1/search?query=javascript
-var url = 'http://hn.algolia.com/api/v1/search?query=javascript';
-$(document).ready(function(){
-    $.getJSON('url', function(data){
-        console.log(data);
-    })
+// $(document).ready(function(data){
+    // LIVE EXAMPLE: Algolia Search API-HN 
+    // https://hn.algolia.com/api
+    // TAKE FROM PAGE THIS SEARCH API URL: 
+    // http://hn.algolia.com/api/v1/search?query=
+    // AND FETCH ALL QUERIES EQUALS TO "javascript"
+    // http://hn.algolia.com/api/v1/search?query=javascript
+    // var url = 'http://hn.algolia.com/api/v1/search?query=javascript';
+    
+//     $(document).ready(function(data){
+//         var url = 'https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty';
+// // var url = 'https://newsapi.org/v2/top-headlines?country=ch&apiKey=307cd047de4d482e8d1d6c3e788a28ad';
+//     $.getJSON('url', function(data){
+//         console.log(data instanceof Object);
+//         if (Array.isArray(data)) {
+//             console.log('This is Array');
+//         } else {
+//             console.log('This is not Array')
+//         }
+//     });
+
+// });
+
+//  JQUERY => SOURCE FOR HTML PAGE: <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+
+
+// * * * 77 AJAX RESPONSE - OBJECT OR ARRAY? 
+
+// var url = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=307cd047de4d482e8d1d6c3e788a28ad';
+
+// MY NEWS API FROM: newsapi.org WEB SITE:
+// var url = 'https://newsapi.org/v2/top-headlines?' +
+//           'country=us&' +
+//           'apiKey=307cd047de4d482e8d1d6c3e788a28ad';
+// var req = new Request(url);
+// fetch(req)
+//     .then(function(response) {
+    //         console.log(response.json());
+    // })
+    
+// THIS CODE DON'T WORK ! ! ! ! ! ! !
+// $(document).ready(function(data){
+// var url = 'https://newsapi.org/v2/top-headlines?country=ch&apiKey=307cd047de4d482e8d1d6c3e788a28ad';
+//     $.getJSON('url', function(data){
+//         console.log(data instanceof Object);
+//         if (Array.isArray(data)) {
+//             console.log('This is Array');
+//         } else {
+//             console.log('This is not Array')
+//         }
+//     });
+
+// });
+
+// * * * * 78 Display AJAX RESPONSE IN THE BROWSER * * * * 
+$(document).ready(function() {
+var url = "http://hn.algolia.com/api/v1/search?query=javascript";
+$.getJSON(url, function(data) {
+var allNews = data.hits; // 20 hits
+    console.log(allNews); // TO SEE RESULT IN MY console.log() IN BROWSER !!!
+        var eachNews = '';
+        allNews.map(function(item, index, array){
+            $('.question').on('click', function(){
+                eachNews += "<div>";
+                eachNews += item.title;
+                eachNews += "</div>";
+            $('.answer').html(eachNews);
+            });
+        });; 
+    });
 });
 
-// SOURCE FOR HTML PAGE: <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+// * * * * 79 GEOLOCATION DATA * * * *
