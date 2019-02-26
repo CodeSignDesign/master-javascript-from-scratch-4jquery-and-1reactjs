@@ -208,4 +208,10 @@ var allNews = data.hits; // 20 hits
     });
 });
 
-// * * * * 79 GEOLOCATION DATA * * * *
+// * * * * 79 GEOLOCATION DATA * * * * WORKS => SUCCESS !!!
+
+if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position){
+        $('.answer').html("latitude: " + position.coords.latitude + "<br />" +  "longitude: " + position.coords.longitude);
+    });
+} // WORKS ! ! ! @ @ @ 
