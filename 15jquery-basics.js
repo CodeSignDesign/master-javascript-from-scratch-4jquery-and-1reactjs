@@ -160,8 +160,6 @@
 //  JQUERY => SOURCE FOR HTML PAGE: <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 
-
-
 // * * * 77 AJAX RESPONSE - OBJECT OR ARRAY? 
 
 // var url = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=307cd047de4d482e8d1d6c3e788a28ad';
