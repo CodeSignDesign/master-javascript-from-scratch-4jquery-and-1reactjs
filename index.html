@@ -5,24 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- animate.css ADDED  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-    <!-- Font Awesome 5.7.2 CSS ADDED -->
+    <!-- Bootstrap CSS 4.3.1 CDN => DON'T USE: He use 3.3.7 -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <!-- * * * ALTERNATIVELY ADDED Bootstrap CSS 3.3.7 --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Font Awesome 5.7.2 CSS ADDED => DON'T USE! He use: 4.7.0 -->
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 
-    <!-- Alternatively ADDED: Font Awesome 4.7.0 -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
-    <!-- ADDED GOOGLE FONT -->
-    <link rel="stylesheet" href="">
-    
+    <!-- * * * ALTERNATIVELY ADDED: Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ADDED GOOGLE FONT: Tangerine NOT ADDED -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
+    <!-- MY LINKED CSS stylesheet -->
     <link rel="stylesheet" href="16jq-news-of-the-day-app.css">
     
-    <title>Unsed in: SECTION 16 jQuery Project - News of the Day App </title>
+    <title>News of the Day App: SECTION 16 jQuery Project</title>
   </head>
 
 <body>
@@ -31,14 +33,18 @@
   <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
         <h1 class="quoteBody">My News of the Day?</h1>
+
         <p class="quoteAuthor">
+
         <hr>
+
         <button class="btn btn-success read">Show me!</button>
       
-        <!-- <a class="dissabled tweetQuote btn btn-info pull-right" href=""><i class="fa fa-twittter"></i> Tweet</a> -->
+        <!-- BUTTON - BOOTSTRAP 3.3.7 CODE: -->
+        <a dissabled class="tweetQuote btn btn-info pull-right" href=""><i class="fa fa-twittter"></i> Tweet</a>
 
-        <!-- In Bootstrap HAVE CHANGED: INSTEAD OF pull-right NOW: float-right !!! -->
-        <a  class="float-right tweetQuote btn btn-info disabled" href=""><i class="fab fa-twitter"></i> Tweet</a>
+        <!-- BUTTON - BOOTSTRAP 4.3.1: NOT pull-right NOW: float-right !!! -->
+        <!-- <a  class="float-right tweetQuote btn btn-info disabled" href=""><i class="fab fa-twitter"></i> Tweet</a> -->
 
         <!-- <a disabled class="tweetQuote btn btn-info pull-right" href=""><i class="fa fa-twitter"></i> Tweet</a> -->
 
@@ -63,7 +69,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <!-- MY SCRIPT ADDED HERE -->
-<script src="16jq-news-of-the-day-app.js"></script>
+<!-- <script src="16jq-news-of-the-day-app.js"></script> -->
+<script src="16-news-app.js"></script>
   
 </body>
 
