@@ -2,4 +2,4 @@
 
 // * * * 80 News of the Day App * * * 
 
-// * * * 81 Preparing HTML markup
+// * * * 81 Preparing HTML markup * * * 
