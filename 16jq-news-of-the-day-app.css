@@ -1,0 +1,21 @@
+/* CHECK THE VERSION OF BOOTSTRAP AND FONT AWESOME 
+TO BE SURE THAT EVERYTHING IS OK */
+
+.quoteBody {
+    font-size: 2.7rem !important;
+    color: royalblue !important;
+    /* Instruction for Text Shadow from page: https://developers.google.com/fonts/docs/getting_started */
+    text-shadow: 4px 4px 4px #aaa;
+    font-family: 'Yatra One', cursive;
+}
+
+/* .btn {
+    border-radius: 10px;
+} */
+
+body {
+    /* font-family: 'Tangerine', serif; */
+    font-family: 'Yatra One', cursive;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
