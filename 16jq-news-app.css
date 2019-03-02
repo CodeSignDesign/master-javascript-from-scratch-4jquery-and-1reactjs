@@ -1,0 +1,33 @@
+/* CHECK THE VERSION OF BOOTSTRAP AND FONT AWESOME 
+TO BE SURE THAT EVERYTHING IS OK */
+body {
+    /* font-family: 'Tangerine', serif; */
+    font-family: 'Yatra One', cursive;
+    /* After I changed font-size from 3em to 2.5em it gets NORMAL */
+    font-size: 2.5em; 
+    text-shadow: 4px 4px 4px #aaa;
+    }
+
+.quoteBody {
+    font-size: 3rem !important;
+    color: royalblue !important;
+    /* color: #83cc83 !important; */
+    
+    /* ADDED TEXT SHADOWS @ @ @ @ */
+    text-shadow: 4px 4px 4px #aaa;
+    font-family: 'Yatra One', cursive;
+    /* Instruction for Text Shadow from page: https://developers.google.com/fonts/docs/getting_started */
+}
+
+.quoteAuthor {
+    font-size: 2rem !important;
+}
+
+.btn {
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.btn:focus {
+    outline: none;
+}

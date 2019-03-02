@@ -6,7 +6,7 @@
 
 $(document).ready(function(){
     // My BUTTON ANIMATION with animate.css 
-    // $(".btn").addClass("animated rotateInDownRight"); // bounce, tada, fadeIn
+    $(".btn").addClass("animated rotateInDownRight"); // bounce, tada, fadeIn
     
     // CODING STARTED FROM HERE first my URL LINK, if not work ...
     // var url="https://newsapi.org/v2/top-headlines?country=ch&apiKey=307cd047de4d482e8d1d6c3e788a28ad";
@@ -15,7 +15,7 @@ $(document).ready(function(){
     $.getJSON(url, function(data) {
     var currentQuote = '';
     var quotes = data.hits;
-    $.('.read').on('click', function() {
+    $('.read').on('click', function() {
         currentQuote = quotes[Math.floor(Math.random()) * quotes.length];
         console.log(currentQuote);
     });

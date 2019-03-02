@@ -8,10 +8,11 @@
 
 // * * * 83 Making AJAX call to API and getting random item * * * NOT WORKED
 // GET THE: floor value (low)
-var f = Math.floor(5.95)
-console.log(f); // 5
+// var f = Math.floor(5.95)
+// console.log(f); // 5
 // GET THE: ceiling value (high)
-var f = Math.ceil(5.95)
-console.log(f);
+// var f = Math.ceil(5.95)
+// console.log(f);
 
 // * * * 84 Populating data to UI and add Tweet feature * * * 
+
