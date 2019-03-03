@@ -16,3 +16,5 @@
 
 // * * * 84 Populating data to UI and add Tweet feature * * * 
 
+// * * * 85 Add clickable link to the news title * * * 
+
