@@ -19,4 +19,5 @@
 // * * * 85 Add clickable link to the news title * * * 
 
 // * * * 86 GO LIVE with GITHUB Pages * * * 
-
+// MY GitHub Page is:
+// https://codesigndesign.github.io/master-javascript-from-scratch-4jquery-and-1reactjs/. 
