@@ -18,3 +18,5 @@
 
 // * * * 85 Add clickable link to the news title * * * 
 
+// * * * 86 GO LIVE with GITHUB Pages * * * 
+
